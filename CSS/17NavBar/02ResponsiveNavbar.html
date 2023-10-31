@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      nav,
+      .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10px;
+        background-color: crimson;
+        color: aliceblue;
+        font-size: 25px;
+      }
+      li {
+        list-style-type: none;
+        padding: 0px 30px;
+      }
+      input {
+        display: none;
+        position: absolute;
+        top: 0px;
+        width: 25px;
+        height: 25px;
+      }
+      span {
+        position: relative;
+      }
+      input:checked + .nav-menu {
+        display: block;
+      }
+
+      @media (max-width: 576px) {
+        nav {
+          position: relative;
+        }
+        .nav-menu {
+          width: 100%;
+          display: none;
+          position: absolute;
+          top: 83px;
+          left: 0px;
+          background-color: teal;
+          color: khaki;
+          padding: 0px;
+        }
+        input {
+          display: block;
+          top: 30px;
+          right: 20px;
+        }
+        input:checked + .nav-menu {
+          display: flex;
+          padding: 20px 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h2>Logo</h2>
+      </div>
+      <input type="checkbox" />
+      <ul class="nav-menu">
+        <li>Test</li>
+        <li>Test</li>
+        <li>Test</li>
+        <li>Test</li>
+      </ul>
+    </nav>
+  </body>
+</html>

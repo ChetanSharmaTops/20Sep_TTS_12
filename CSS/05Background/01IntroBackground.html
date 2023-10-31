@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background In CSS</title>
+    <style>
+        div{
+            height: 500px;
+            margin: 20px;
+            color: aliceblue;
+        }
+        .background-attachment{
+            border: 10px dashed red;
+             background-image: url(../../Image/banner.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+
+        }
+        .background-clip{
+            border: 10px dashed red;
+            background-image: url(../../Image/banner.jpg);
+            /* background-repeat: no-repeat; */
+            padding: 100px;
+            background-clip: border-box;
+            background-clip: content-box;
+            background-clip: padding-box;
+
+
+        }
+        .background-origin{
+            border: 10px dashed red;
+            background-image: url(../../Image/banner.jpg);
+            background-repeat: no-repeat;
+            padding: 100px;
+            background-origin: border-box;
+            background-origin: content-box;
+            background-origin: padding-box;
+
+        }
+        .background-color{
+            border: 10px dashed red;
+            background-color: teal;
+            color: khaki;
+
+        }
+        .background-image{
+            border: 10px dashed red;
+            background-image: url(../../Image/banner.jpg);
+        }
+        .background-position{
+            border: 10px dashed red;
+             background-image: url(../../Image/banner.jpg);
+            background-repeat: no-repeat;
+            /* background-size: 200px; */
+            background-size: cover;
+            background-position: top;
+            background-position: bottom;
+            background-position: left;
+            background-position: right;
+            background-position: center;
+
+
+        }
+        .background-repeat{
+            border: 10px dashed red;
+            background-image: url(../../Image/banner.jpg);
+            background-repeat: no-repeat;
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+
+
+        }
+        .background-size{
+            border: 10px dashed red;
+            background-image: url(../../Image/banner.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-size: cover;
+            /* background-size: 100% 100%; */
+            /* background-size: 200px; */
+
+        }
+        .background-shorthand{
+            border: 10px dashed red;
+            background: url(../../Image/banner.jpg)no-repeat fixed center center/cover;
+
+        }
+        .background-multiple{
+            border: 10px dashed red;
+            background-image: url(../../Image/banner2.jpeg), url(../../Image/banner.jpg);
+            background-repeat: no-repeat;
+            background-size: 200px, cover ;
+            background-position: 0% 0%, center;
+
+        }
+    </style>
+
+</head>
+<body>
+    <h1>
+        Background In CSS
+    </h1>
+    <ol>
+
+        <li> background-attachment</li>
+        <li> background-clip</li>
+        <li> background-origin</li>
+        <li> background-color</li>
+        <li> background-image</li>
+        <li> background-position</li>
+        <li> background-repeat</li>
+        <li> background-size</li>
+        <li> background-shorthand</li>
+        <li> background-multiple</li>
+    </ol>
+    <hr>
+    <div class="background-attachment">background-attachment</div>
+    <div class="background-clip">background-clip</div>
+    <div class="background-origin">background-origin</div>
+    <div class="background-color">background-color</div>
+    <div class="background-image">background-image</div>
+    <div class="background-position">background-position</div>
+    <div class="background-repeat">background-repeat</div>
+    <div class="background-size">background-size</div>
+    <div class="background-shorthand">background-shorthand</div>
+    <div class="background-multiple">background-multiple</div>
+</body>
+</html>

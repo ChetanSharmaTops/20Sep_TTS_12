@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#section{
+    background-color: crimson;
+    color: aliceblue;
+}
+.container{
+    /* border: 1px solid black; */
+    width: 90%;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.col-50{
+    width: 50%;
+}
+.col-33{
+    width: 33.33%;
+}
+.col-25{
+    width: 25%;
+}
+img{
+    width: 100%;
+}
+.main-text{
+    text-align: center;
+    padding: 50px;
+}
+h1{
+    font-size: 40px;
+    
+}
+p{
+    font-size: 30px;
+    padding-top: 20px;
+
+}

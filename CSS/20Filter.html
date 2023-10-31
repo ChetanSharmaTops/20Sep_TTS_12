@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter in CSS</title>
+    <style>
+      body {
+        background: linear-gradient(
+          45deg,
+          rgba(67, 9, 121, 1) 22%,
+          rgba(88, 88, 198, 1) 50%,
+          rgba(205, 0, 255, 1) 84%
+        );
+        color: aliceblue;
+      }
+      .box {
+        width: 400px;
+        height: 400px;
+        margin: auto;
+        border: 10px solid green;
+        outline: 5px dashed rgb(226, 43, 43);
+        border-radius: 50%;
+        background: url(../Image/banner.jpg) no-repeat center center/cover;
+        cursor: pointer;
+        /* filter: blur(1px); */
+        /* filter: brightness(1.5); */
+        /* filter: blur(5px); */
+        /* filter: brightness(0.4); */
+        filter: contrast(200%);
+        /* filter: drop-shadow(16px 16px 20px rgb(180, 180, 194)); */
+        /* filter: grayscale(50%); */
+        /* filter: hue-rotate(90deg); */
+        /* filter: invert(75%); */
+        /* filter: opacity(25%); */
+        /* filter: saturate(30%); */
+        /* filter: sepia(60%); */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Filter in CSS</h1>
+
+    <hr />
+    <div class="box"></div>
+  </body>
+</html>

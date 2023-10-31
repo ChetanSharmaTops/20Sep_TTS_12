@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Selector</title>
+    <style>
+        .box>p{
+            background-color: crimson;
+            color: aliceblue;
+        }
+        .box{
+            border: 5px dashed green;
+        }
+        .mini-box{
+            border: 5px dotted blue;
+        }
+        .mini-box>p{
+            background-color: teal;
+            color: khaki;
+        }
+    </style>
+</head>
+<body>
+    <h1>Child Selector (>)</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dolore?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dolore?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dolore?</p>
+    <div class="box">
+        box
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dolore?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dolore?</p>
+        <div class="mini-box">
+            mini-box
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dolore?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dolore?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dolore?</p>
+        </div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dolore?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dolore?</p>
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dolore?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dolore?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dolore?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dolore?</p>
+
+</body>
+</html>

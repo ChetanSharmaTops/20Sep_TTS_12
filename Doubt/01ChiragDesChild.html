@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chirag</title>
+    <style>
+        span{
+            background-color: black;
+            color: aliceblue;
+            font-size: 25px;
+        }
+      .box {
+        border: 5px dashed green;
+      }
+      .parent {
+        border: 5px dashed red;
+        margin: 20px;
+      }
+      .child {
+        border: 5px dashed rebeccapurple;
+        margin: 20px;
+      }
+      .box p{
+            color: teal;
+            background-color: khaki;
+        }
+      /* .box > p {
+        color: teal;
+        background-color: khaki;
+      }
+      .child > p {
+        background-color: crimson;
+        color: aliceblue;
+      }
+      .parent>p{
+        background-color: violet;
+        color: black;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <span>box</span>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, dolor?
+      </p>
+
+      <div class="parent">
+          <span>parent</span>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+          repellendus delectus ab assumenda, consequuntur obcaecati?
+        </p>
+        <div class="child">
+          <span>Child</span>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="child">
+          <span>Child</span>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="child">
+          <span>Child</span>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+            repellendus delectus ab assumenda, consequuntur obcaecati?
+          </p>
+      </div>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, dolor?
+      </p>
+    </div>
+  </body>
+</html>
