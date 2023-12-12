@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Method IN JS</title>
+  </head>
+  <body>
+    <h1>String Method IN JS</h1>
+
+    <script>
+      // String Method IN JS
+
+      let a = "Namaste Bharat";
+      let b = "         Namaste Bharat         ";
+      let name = 'Lalit Yadav'
+      let email = 'CHETAN@GOOGLE.COM'
+      console.log(a);
+      console.log(a.length);
+      console.log(a.charAt(5)); // Returns the character (exactly one UTF-16 code unit) at the specified index.
+      console.log(a.charCodeAt("B")); // Returns a number that is the UTF-16 code unit value at the given index.
+      console.log(b);
+      console.log(b.trim());
+      console.log(a.concat(' Mata'));
+      console.log(name);
+      console.log(name.replace('Yadav', 'Gehlot'));
+      console.log(a.indexOf('B')); 
+      console.log(a.indexOf('b'));   // Returns the index within the calling String object of the first occurrence of searchValue, or -1 if not found.
+      console.log(a.indexOf('a'));
+      console.log(a.lastIndexOf('a'));
+      console.log(a.toUpperCase());
+      console.log(email.toLowerCase());
+    </script>
+  </body>
+</html>
