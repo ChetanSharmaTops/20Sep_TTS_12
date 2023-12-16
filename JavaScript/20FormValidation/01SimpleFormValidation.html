@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form Validation</title>
+</head>
+<body>
+    <h1>Simple Form Validation</h1>
+        <hr>
+        <!-- <input type="text" name="uname" id="uname" onblur="checkUserName()"> -->
+        <input type="text" name="uname" id="uname" onblur="checkUserName()">
+        <span id="error1"></span>
+        <br><br>
+        <input type="password" name="upass" id="upass" onblur="checkUserPass()">
+        <span id="error2"></span>
+        <br><br>
+
+        <script>
+            let userName = document.getElementById("uname");
+            let userPass = document.getElementById("upass");
+            // console.log(userData);
+            // console.log(typeof userData);
+            // console.log(userData.value);
+            // console.log(typeof userData.value);
+            // console.log(userData.value);
+
+            function checkUserName() {
+                // console.log(userData);
+                // console.log(userData.value);
+
+                if (userName.value == "") {
+                    console.log("Enter Valid User Name");
+                    document.getElementById('error1').innerText = "Enter Valid User Name" 
+                    document.getElementById('error1').style.color = "red" 
+                } else {
+                    console.log("User Name");
+                    document.getElementById('error1').innerText = "" 
+                    
+                }
+            }
+            function checkUserPass() {
+                // console.log(userData);
+                // console.log(userData.value);
+
+                if (userPass.value == "") {
+                    console.log("Enter Valid User Password");
+                    document.getElementById('error2').innerText = "Enter Valid User PassWord" 
+                    document.getElementById('error2').style.color = "red" 
+                } else {
+                    console.log("User PassWord");
+                    document.getElementById('error2').innerText = "" 
+                    
+                }
+            }
+          
+         
+          
+        </script>
+</body>
+</html>
