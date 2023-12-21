@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Function Validation</title>
+</head>
+<body>
+    <input type="text" name="uname" id="uname" onblur="handelValidation(this, 'error1')">
+    <span id="error1"></span>
+    <br><br>
+    <input type="text" name="upass" id="upass" onblur="handelValidation(this, 'error2')">
+    <span id="error2"></span>
+    <br><br>
+    <input type="text" name="umobile" id="umobile" onblur="handelValidation(this, 'error3')">
+    <span id="error3"></span>
+    <br><br>
+    <input type="text" name="uemail" id="uemail" onblur="handelValidation(this, 'error4')">
+    <span id="error4"></span>
+    <br><br>
+
+
+    <script>
+
+        function handelValidation(e, spnId) {
+            // console.log(e);
+            // console.log(e.value);
+            // console.log("function is called");
+            if (e.value == '') {
+                // console.log('Enter valid Username');
+                document.getElementById(spnId).innerText = 'Enter valid Username' 
+            } else {
+                // console.log('valid Username');
+                document.getElementById(spnId).innerText = '' 
+
+                
+            }
+        }
+
+
+        // function add(para1, para2) { // parameters pass in (para1, para2)
+        //     return para1 + para2
+            
+        // }
+
+        // // add(arg1, arg2)  // when we call a function arguments were wriiten in (arg1, arg2)
+        // console.log(add(4,5));
+        // console.log(add(3,4));
+    </script>
+
+</body>
+</html>
