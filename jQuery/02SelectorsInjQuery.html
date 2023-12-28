@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors In jQuery</title>
+  </head>
+  <body>
+    <h1>Selectors In jQuery</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, libero!</p>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, libero!</h2>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, libero!</h3>
+    <button class="btn">Class Selector</button>
+    <button id="unique">ID Selector</button>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      // Selectors In jQuery
+
+      $(document).ready(function () {
+
+        // Syntax of Selectors 
+
+
+        //   $(selector).action(function () {
+        //       // do something 
+        //   })
+
+
+        // Element Selector
+
+        $("p").click(function () {
+          $("p").hide();
+        });
+
+        // Class Selector 
+
+        $(".btn").click(function () {
+          $("h2").hide();
+        });
+
+
+        // Id Selector 
+
+        $("#unique").click(function () {
+          $("h2").show();
+        });
+      });
+    </script>
+  </body>
+</html>
