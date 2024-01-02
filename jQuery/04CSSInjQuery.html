@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS in jQuery</title>
+  </head>
+  <body>
+    <h1>CSS in jQuery</h1>
+    <p>This Paragraph will show some magic in jQuery</p>
+    <button class="btnCss">CSS Applied</button>
+    
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+      
+        $('.btnCss').click(function () {
+            $('p').css('color', 'red')   
+            $('p').css({'color': 'white', 'backgroundColor': 'red', 'fontSize':'30px'})   
+            $("p").css({backgroundColor: "yellow", color: 'black'});
+
+            console.log('This will Change CSS of the element');        
+
+        })
+     
+      });
+    </script>
+  </body>
+</html>

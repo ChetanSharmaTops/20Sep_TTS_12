@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fade Effect</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: crimson;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Fade Effect in jQuery</h1>
+    <p>This Paragraph will show some magic in jQuery</p>
+    <!-- <p>This Paragraph will show some magic in jQuery</p>
+    <p>This Paragraph will show some magic in jQuery</p> -->
+    <div class="box">Here we show you some Magic</div>
+    <!-- <div class="box">Here we show you some Magic</div>
+    <div class="box">Here we show you some Magic</div> -->
+    <button class="btnFadeIn">Fade In Element</button>
+    <button class="btnFadeOut">Fade Out Element</button>
+    <button class="btnFadeToggle">Fade Toggle Element</button>
+    <button class="btnFadeTo">Fade To Element</button>
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".btnFadeIn").click(function () {
+          $("p,.box").fadeIn(4000);
+          // $('.box').fadeIn(3000)
+
+          console.log("This will Fade In the element");
+        });
+        $(".btnFadeOut").click(function () {
+          $("p").fadeOut(3000);
+          $(".box").fadeOut(5000);
+          $("p").css({ backgroundColor: "yellow", color: "black" });
+
+          console.log("This will Fade Out the element");
+        });
+        $(".btnFadeToggle").click(function () {
+          $("p").fadeToggle(3000);
+          $(".box").fadeToggle(5000);
+          console.log("This will Fade Toggle the element");
+        });
+        $(".btnFadeTo").click(function () {
+          // $('p').fadeTo(3000)
+          $(".box").fadeTo(2000, 0.5);
+          console.log("This will Fade Toggle the element");
+        });
+        // $("p, .box").on("click", function () {
+        //     $(this).fadeTo("slow", 0.33);
+        //   });
+      });
+    </script>
+  </body>
+</html>

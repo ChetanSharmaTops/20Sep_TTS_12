@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hide Show</title>
+  </head>
+  <body>
+    <h1>Hide And Show in jQuery</h1>
+    <p>This Paragraph will show some magic in jQuery</p>
+    <button class="btnHide">Hide Element</button>
+    <button class="btnShow">Show Element</button>
+    <button class="btnToggle">Toggle Element</button>
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.btnHide').click(function () {
+            $('p').hide()   
+
+            console.log('This will hide the element');        
+        })
+        $('.btnShow').click(function () {
+            $('p').show()        
+            $("p").css({backgroundColor: "yellow", color: 'black'});
+
+
+            console.log('This will Show the element');        
+
+        })
+        $('.btnToggle').click(function () {
+            $('p').toggle()        
+            console.log('This will Toggle the element');        
+
+        })
+      });
+    </script>
+  </body>
+</html>
