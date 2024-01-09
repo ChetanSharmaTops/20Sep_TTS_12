@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse Event</title>
+  </head>
+  <body>
+    <h1>Mouse Event</h1>
+    <div class="box">This is The Magic Of jQuery</div>
+
+    <!-- jQuery -->
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <!-- script css  -->
+    <script>
+      $(".box").css({
+        backgroundColor: "crimson",
+        color: "white",
+        textAlign: "center",
+        fontSize: "30px",
+        height: "150px",
+        padding: "20px",
+        margin: "20px 0px",
+        borderRadius: "20px",
+        border: "5px ridge blue",
+        outline: "5px dashed green",
+      });
+      $("button").css({
+        backgroundColor: "brown",
+        color: "khaki",
+        padding: "10px 20px",
+        margin: "20px 0px",
+      });
+      $("body").css({ backgroundColor: "tan", textAlign: "center" });
+    </script>
+
+    <!-- script  -->
+
+    <script>
+      $(document).ready(function () {
+        // Mouse Enter
+
+        $(".box").mouseenter(function () {
+          $(".box").css({
+            backgroundColor: "pink",
+            color: "black",
+          });
+        });
+        // Mouse leave
+
+        $(".box").mouseleave(function () {
+          $(".box").css({
+            backgroundColor: "yellow",
+            color: "black",
+          });
+        });
+        // Mouse down
+
+        $(".box").mousedown(function () {
+          $(".box").css({
+            backgroundColor: "black",
+            color: "white",
+          });
+        });
+        // Mouse down
+
+        $(".box").mouseup(function () {
+          $(".box").css({
+            backgroundColor: "white",
+            color: "black",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

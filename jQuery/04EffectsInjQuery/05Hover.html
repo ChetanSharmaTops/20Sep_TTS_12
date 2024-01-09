@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hover Effect</title>
+  </head>
+  <body>
+    <h1>Hover Effect</h1>
+
+    <button class="animate">Animate</button>
+   
+
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum optio
+      dolorem at voluptas assumenda, in iusto quos eveniet mollitia repellendus,
+      possimus facilis quibusdam laborum sint cumque itaque vitae similique
+      nemo.
+    </div>
+
+
+    <!-- jquery -->
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <!-- script css  -->
+    <script>
+      $(".box").css({
+        backgroundColor: "crimson",
+        color: "white",
+        width: "300px",
+        padding: "20px",
+        margin: "20px 0px",
+        borderRadius: "20px",
+        border: "5px ridge blue",
+        outline: "5px dashed green",
+      });
+      $("button").css({
+        backgroundColor: "brown",
+        color: "khaki",
+        padding: "10px 20px",
+        margin: "20px 0px",
+      });
+      $("body").css({ backgroundColor: "tan" });
+
+      
+    </script>
+
+
+<!-- Scirpt  -->
+
+<script>
+    $(document).ready(function () {
+        // Animate
+
+        $(".animate").click(function () {
+          $(".box").animate({marginLeft: '500px', fontSize: '30px'}, 3000   );
+          $('.box').hover(function () {
+            $('.box').css({
+                backgroundColor: 'pink',
+                color: 'blue',
+            })
+          })
+        });
+
+       
+      });
+</script>
+  </body>
+</html>
